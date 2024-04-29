@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --hue: 10;
+    --bg-color: hsl(var(--hue), 5%, 7%);
+    --bg-buttons-sound: hsl(var(--hue), 0%, 87%);
+    --text-color: hsl(var(--hue), 40%, 98%);
+    --primary-color: hsl(var(--hue), 0%, 100%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --button-secondary: hsl(var(--hue), 40%, 98%);
+
+    font-size: clamp(20%, 1% + 2vw, 62.5%);
+}
+
+
+html.light {
+    --text-color: hsl(var(--hue), 5%, 7%);
+    --bg-color: hsl(var(--hue), 40%, 98%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --primary-color: hsl(var(--hue), 0%, 5%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+    display: none;
+}
+
+#toggle-mode {
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    font-size: 3.2rem;
+    line-height: 0;
+    color: var(--text-color);
+}
+
+
+.sr-only { 
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 2.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer {
+    font-size: 12.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#controls {
+    margin-top: 1rem;
+    gap: 4.8rem;
+}
+
+#musics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#musics button {
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+    
+    background-color: var(--bg-buttons-sound);
+    border: none;
+    border-radius: 0.8rem;
+    padding: 2.5rem 0rem;
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#musics button:hover, #musics .playing {
+    background-color: #9467e7; 
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 4.4rem;
+}
+
+.secondary {
+    color: var(--button-secondary);
+}
