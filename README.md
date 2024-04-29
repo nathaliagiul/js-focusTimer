@@ -1,7 +1,7 @@
 # # Focus Timer - Pomodoro
 
-O timer é fixado em 25 minutos para ajudar os usuários a se concentrarem em suas tarefas e melhorar a produtividade.
- 
+A Técnica Pomodoro é uma abordagem de gestão de tempo desenvolvida por Francesco Cirillo no final dos anos 1980. Baseia-se em ciclos de trabalho focado (chamados de "Pomodoros") intercalados com intervalos de descanso para maximizar a produtividade e a concentração.
+
 ## Sons Disponíveis
 
 - **Floresta**: [Clique aqui para ouvir](https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view)
